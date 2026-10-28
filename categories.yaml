@@ -1,0 +1,187 @@
+# Your category names. strong=weight 3, keywords=weight 1, patterns=regex weight 3, aliases=other spellings of the label.
+# Keywords shared by many categories automatically count less (IDF). Tune using the `eval --show-errors` output.
+categories:
+  File_Jacket_Cover:
+    aliases: [Jacket Cover]
+    strong: [file jacket, file cover, version july 2017, document checklist cover, bajaj finance limited registered office]
+    keywords: [lan, customer name, branch, file no, pune, agreement no, loan account, customer id, product]
+  Disbursement_Memo:
+    strong: [disbursement memo, disbursement request, request for disbursement, cam format, sourcing details, applicant complete name, disbursal memo]
+    keywords: [spl credit approval, case type, number of vehicles, credit program, csm name and ticket no, csm name, dealership name, name of ddf, uid, co applicant name, application no, net disbursement,
+      tranche, payee, favouring]
+  Application_Form:
+    strong: [loan application form, application form, applicant details, business details, documents collected]
+    keywords: [co applicant, guarantor, declaration, photo sign, present address, permanent address, residential status, date of birth, purpose of loan]
+  Credit_Supported_Documents:
+    aliases: [Credit Support Documents]
+    strong: [income viability report, tvr format, tvr, approval cum delivery order, delivery order, food security, national food security, ration card, credit approval]
+    keywords: [telephone verification, respondent, address confirmed, known to applicant, vehicle usage, route, received with thanks, money receipt, delivery no, loan amount applied, dealer name, office
+        landline, deviation, monthly income, earning member, original seen verified, original seen, osv stamp, format for dma, dfl employee, csm ticket no, civil supplies, consumer protection, verification
+        status, tvr status, cibil]
+  Insurance_Policy:
+    aliases: [Insurance, Insurance Policy Vehicle]
+    strong: [certificate cum policy schedule, policy schedule, package policy, group personal accident, member enrolment form, certificate of insurance]
+    keywords: [premium, insurer, nominee, irdai, sum assured, policy period, idv, own damage, third party, insured]
+  Invoice:
+    strong: [tax invoice, retail invoice, tax retail invoice, invoice no, invoice date, cash receipt, bill of sale, authorised dealer for bajaj auto]
+    keywords: [hsn, gstin, gst no, chassis, engine no, ex showroom, dealer, gst, amount in words, sold to, model, colour, insurance, registration]
+  Loan_Agreement:
+    strong: [auto loan agreement, loan agreement, this agreement is made, agreement no unique id no, in witness whereof, events of default]
+    keywords: [borrower, lender, whereas, governing law, co borrower, schedule i, terms and conditions, page of 20, hereinafter, jurisdiction, indemnify, promissory note, repayment schedule]
+  MITC:
+    strong: [most important terms and conditions, mitc]
+    keywords: [events of default, penal interest, foreclosure, prepayment, charges]
+  Vernacular_Form:
+    strong: [telugu, vernacular, kannada, tamil, marathi, hindi version, gujarati, malayalam, bengali, odia]
+    keywords: []
+  NACH_Mandate:
+    strong: [nach, ecs mandate, umrn, national automated clearing house, debit mandate, e-mandate]
+    keywords: [sponsor bank, utility code, debit type, fixed amount, maximum amount, frequency, mandate, destination bank]
+  Consent_letter:
+    strong: [consent letter, letter of consent, i hereby consent, we hereby consent, undertaking cum consent]
+    keywords: [consent, undertake, authorise, authorize, no objection]
+  Board_Resolution_Doc:
+    strong: [board resolution, resolved that, certified true copy of the resolution, extract of the minutes, board of directors]
+    keywords: [resolution, authorised signatory, company secretary, meeting held on, directors, quorum]
+  Cancelled_Cheque:
+    strong: [cancelled, a/c payee, pay to the order of, please sign above]
+    keywords: [cheque, micr, rupees, ifsc, bearer, valid for three months]
+  Cibil_Report:
+    strong: [cibil, credit information report, transunion cibil, credit score, experian, equifax, crif high mark]
+    keywords: [enquiries, dpd, account summary, written off, suit filed, member name, days past due]
+  CIN:
+    strong: [certificate of incorporation, corporate identity number, ministry of corporate affairs, registrar of companies]
+    keywords: [cin, company limited by, incorporated, mca, roc]
+    patterns: ['\b[LU]\d{5}[A-Z]{2}\d{4}[A-Z]{3}\d{6}\b']
+  DOVD_Bank_Statement_Passbook:
+    aliases: [Bank Statement]
+    strong: [bank statement, statement of account, account statement, passbook, brought forward, opening balance, closing balance]
+    keywords: [withdrawals, withdrawn, deposits, deposit, balance, particulars, initials, for customer use, cheque no, chq no, narration, txn date, value date, ifsc, upi, neft, imps, account no, date]
+  DOVD_Electricity_Bill:
+    aliases: [Electricity Bill]
+    strong: [electricity bill, energy bill, units consumed, meter reading, kwh]
+    keywords: [consumer number, discom, mseb, msedcl, tata power, tsspdcl, apspdcl, bescom, connected load, tariff, bill date]
+  DOVD_Gas_Bill:
+    strong: [gas bill, piped natural gas, png bill, lpg, indane, bharat gas, hp gas, mahanagar gas, indraprastha gas]
+    keywords: [consumer no, scm, cylinder, gas consumption]
+  DOVD_Rent_Agreement:
+    strong: [rent agreement, leave and licence agreement, leave and license agreement, rental agreement]
+    keywords: [lessor, lessee, licensor, licensee, monthly rent, security deposit, lock in period, tenant, landlord]
+  DOVD_Utility_Bill:
+    strong: [water bill, water supply bill, municipal water, broadband bill, internet bill, bill of supply]
+    keywords: [consumer number, due date, bill date, amount payable, connection, water charges, sewerage]
+  DOVD_Landline_Bill:
+    strong: [telephone bill, landline bill, bsnl, mtnl, tax invoice telephone, telephone number]
+    keywords: [call charges, rental, billing period, airtel, dsl, broadband, amount payable]
+  Form_60:
+    strong: [form no. 60, form 60, form no 60, rule 114b]
+    keywords: [pan not obtained, agricultural income, non agricultural income, declaration to be filed, transaction]
+  GST_Certificate:
+    strong: [form gst reg-06, goods and services tax, registration certificate gst]
+    keywords: [gstin, legal name, trade name, constitution of business, date of liability]
+    patterns: ['\b\d{2}[A-Z]{5}\d{4}[A-Z][1-9A-Z]Z[0-9A-Z]\b']
+  ITR:
+    strong: [itr-v, income tax return, itr acknowledgement, acknowledgement number, computation of income, income tax department e-filing]
+    keywords: [assessment year, total income, gross total income, taxable income, date of filing, form 26as, form 16]
+  Lease_Deed:
+    strong: [lease deed, deed of lease, registered lease]
+    keywords: [lessor, lessee, demised premises, term of lease, lease rent, sub registrar]
+  Loan_Term_Sheet:
+    strong: [term sheet, loan term sheet, summary of terms, key terms]
+    keywords: [facility amount, roi, tenor, processing fee, security, covenants, repayment]
+  OVD_Aadhar:
+    aliases: [Aadhar Card, Aadhaar Card]
+    strong: [unique identification authority of india, government of india aadhaar, mera aadhaar, aadhaar, uidai, enrolment no, enrollment no, your aadhaar no, identity proof]
+    keywords: [government of india, dob, year of birth, male, female, vid, s o, address, download date, father]
+    patterns: ['\b\d{4}\s\d{4}\s\d{4}\b']
+  OVD_Driving_License:
+    aliases: [Driving License]
+    strong: [driving licence, driving license, union of india driving, indian union driving licence]
+    keywords: [dl no, valid till, cov, transport, non transport, blood group, date of first issue, rta, lmv, mcwg]
+  OVD_Passport:
+    strong: [republic of india passport, passport no, place of issue, type p]
+    keywords: [nationality, indian, date of expiry, file no, surname, given name, ministry of external affairs]
+    patterns: [P<IND]
+  OVD_Voter_ID:
+    aliases: [Voter ID Card]
+    strong: [election commission of india, elector's photo identity card, electors photo identity card, elector photo identity, identity card]
+    keywords: [epic no, elector name, electors name, voter, electoral registration officer, assembly constituency, address, father's name, sex, age as on, facsimile signature]
+  PAN:
+    strong: [permanent account number card, permanent account number, income tax department govt of india]
+    keywords: [signature, father's name, date of birth, pan]
+    patterns: ['\b[A-Z]{5}[0-9]{4}[A-Z]\b']
+  Partnership_Deed:
+    strong: [partnership deed, deed of partnership, partnership firm, indian partnership act]
+    keywords: [partners, profit sharing, capital contribution, firm, registrar of firms, managing partner]
+  Photograph:
+    strong: [photograph, passport size photo, affix photo]
+    keywords: [photo]
+  Property_Tax_Receipt:
+    strong: [property tax receipt, property tax bill, municipal tax receipt, house tax receipt, property tax]
+    keywords: [assessment no, ward, tax paid, municipal, property no, demand notice, receipt no]
+  Sale_Deed:
+    strong: [sale deed, deed of sale, conveyance deed, absolute sale]
+    keywords: [vendor, vendee, purchaser, seller, sub registrar, stamp duty, registration fee, schedule of property, bounded by, survey no]
+  Shop_Act:
+    strong: [shops and establishments act, shop act, shop and establishment, gumasta, trade licence, trade license]
+    keywords: [establishment, registration certificate, employer, nature of business, labour department]
+  Guarantee_Deed:
+    strong: [guarantee deed, deed of guarantee, letter of guarantee, guarantor hereby, continuing guarantee]
+    keywords: [guarantor, principal debtor, indemnity, surety, guaranteed amount]
+  MOA:
+    strong: [memorandum of association, moa, name clause, objects clause]
+    keywords: [capital clause, subscribers, liability of members, registered office clause, companies act]
+  Policy_Assignment_Form:
+    strong: [policy assignment, assignment of life insurance policy, deed of assignment, assignor, absolute assignment]
+    keywords: [assignee, life assured, section 38]
+  Power_Of_Attorney:
+    aliases: [Power_Of_Attorny]
+    strong: [power of attorney, general power of attorney, special power of attorney, constituted attorney]
+    keywords: [attorney, executant, do hereby appoint, ratify, principal, notary]
+  PROFORMA_INVOICE:
+    strong: [proforma invoice, pro forma invoice, quotation]
+    keywords: [validity, ex showroom, road tax, insurance, on road price, dealer, estimate]
+  Sale_Agreement:
+    strong: [agreement to sell, agreement for sale, builder buyer agreement, sale agreement, memorandum of understanding for sale]
+    keywords: [promoter, allottee, possession, rera, earnest money, carpet area, consideration, flat no, vendor, purchaser]
+  Sanction_Letter:
+    strong: [sanction letter, letter of sanction, sanction advice, we are pleased to sanction, bflcustomercare]
+    keywords: [sanctioned amount, rate of interest, tenure, processing fee, validity of sanction, pre-disbursement, loan amount approved]
+  Security_Cheque:
+    strong: [security cheque, cheque as security, post dated cheque, pdc details]
+    keywords: [cheque no, bank name, drawn on]
+  Surrender_Letter:
+    strong: [surrender letter, letter of surrender, voluntary surrender, surrender of vehicle, surrender of policy]
+    keywords: [surrender, hand over, possession of vehicle, repossession]
+  Trust_Deed:
+    strong: [trust deed, deed of trust, declaration of trust, indian trusts act]
+    keywords: [settlor, trustees, beneficiaries, trust property, corpus]
+  Udyam_Registration_Certificate:
+    strong: [udyam registration certificate, udyam registration number, ministry of micro small and medium enterprises]
+    keywords: [msme, type of enterprise, nic code, date of incorporation, udyam]
+    patterns: ['UDYAM-[A-Z]{2}-\d{2}-\d{7}']
+  Beneficiary_Owner_Doc:
+    strong: [beneficial owner, beneficial ownership, ultimate beneficial owner, ubo declaration]
+    keywords: [shareholding, control, natural person, pep, politically exposed]
+  Registration_Certificate:
+    strong: [certificate of registration, registration certificate, regn no, form 35, duplicate certificate of registration, office endorsement, hire purchase]
+    keywords: [chassis no, engine no, owner name, regional transport office, rto, hypothecated to, fuel, date of registration, hypothecation, registering authority]
+  Charge_Slip:
+    strong: [charge slip, card charge slip, pos slip, swipe slip]
+    keywords: [merchant, card no, approval code, terminal id, batch no, rrn]
+  Key_Management_Members:
+    strong: [key management, key managerial personnel, list of directors, key management members]
+    keywords: [designation, din, directors, authorised signatory, kmp]
+  Check_list:
+    strong: [audit parameter, agreement franked, all agreement pages available, document checklist, checklist]
+    keywords: [remarks, signature available, yes no, documents received, verified, pending]
+  NIP_Income_Assessment_Form:
+    aliases: [NIP_Income_Assessment _Form]
+    strong: [income viability report, income assessment, nip income, viability report]
+    keywords: [vehicle usage, route, expected income, loan amount applied, name of customer, monthly income, emi coverage]
+  EMI_Card_Application_Form:
+    strong: [emi card application, emi network card, insta emi card, emi card]
+    keywords: [card limit, card application, pre approved limit, membership, annual fee]
+  OVD_NPR_Card:
+    strong: [national population register, npr card, npr, resident identity]
+    keywords: [registrar general, census, npr no, resident]
