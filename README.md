@@ -5,7 +5,7 @@ TIFF -> deskew/rotate -> Tesseract OCR (text, header, top, footer, OCR confidenc
      -> blend (rules gain weight when they fire strongly) -> page-order smoothing (Viterbi) -> CSV/JSON
 Runs fully offline.
 
-## Measured accuracy (leave-one-file-out on your 5 labelled files, 223 pages)
+## Measured accuracy (leave-one-file-out on your 50 labelled files, 2203 pages)
 | rules only | model + rules | + page-order smoothing (what `classify` uses) |
 |---|---|---|
 | 61% | 76% | **92%** |
