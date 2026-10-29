@@ -11,7 +11,7 @@ categories:
       tranche, payee, favouring]
   Application_Form:
     strong: [loan application form, application form, applicant details, business details, documents collected]
-    keywords: [co applicant, guarantor, declaration, photo sign, present address, permanent address, residential status, date of birth, purpose of loan]
+    keywords: [co applicant, guarantor, declaration, photo sign, present address,  permanent address, residential status, date of birth, purpose of loan]
   Credit_Supported_Documents:
     aliases: [Credit Support Documents]
     strong: [income viability report, tvr format, tvr, approval cum delivery order, delivery order, food security, national food security, ration card, credit approval]
