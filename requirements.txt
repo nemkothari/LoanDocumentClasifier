@@ -1,5 +1,5 @@
 pillow>=10.0
-pytesseract>=0.3.10
+pytesseract>=0.3.10 
 pyyaml>=6.0
 numpy>=1.24
 scikit-learn>=1.3
