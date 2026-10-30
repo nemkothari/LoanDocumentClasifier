@@ -20,7 +20,7 @@ categories:
         status, tvr status, cibil]
   Insurance_Policy:
     aliases: [Insurance, Insurance Policy Vehicle]
-    strong: [certificate cum policy schedule, policy schedule, package policy, group personal accident, member enrolment form, certificate of insurance]
+    strong: [certificate cum policy schedule, policy  schedule, package policy, group personal accident, member enrolment form, certificate of insurance]
     keywords: [premium, insurer, nominee, irdai, sum assured, policy period, idv, own damage, third party, insured]
   Invoice:
     strong: [tax invoice, retail invoice, tax retail invoice, invoice no, invoice date, cash receipt, bill of sale, authorised dealer for bajaj auto]
