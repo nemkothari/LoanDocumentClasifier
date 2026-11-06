@@ -1,4 +1,4 @@
-# Offline Loan-Page Classifier (v3)
+# Offline Loan-Page Classifier (v4)
 
 TIFF ->  deskew/rotate -> Tesseract OCR (text, header, top, footer, OCR confidence, layout thumbnail)
      -> rules (IDF-weighted keywords, header boost, regex)  +  ML model (TF-IDF + layout + page position)
