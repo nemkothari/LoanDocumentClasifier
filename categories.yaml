@@ -177,11 +177,11 @@ categories:
     keywords: [remarks, signature available, yes no, documents received, verified, pending]
   NIP_Income_Assessment_Form:
     aliases: [NIP_Income_Assessment _Form]
-    strong: [income viability report, income assessment, nip income, viability report]
+    strong: [income viability report, income assessment, nip income, viability  report]
     keywords: [vehicle usage, route, expected income, loan amount applied, name of customer, monthly income, emi coverage]
   EMI_Card_Application_Form:
     strong: [emi card application, emi network card, insta emi card, emi card]
     keywords: [card limit, card application, pre approved limit, membership, annual fee]
   OVD_NPR_Card:
     strong: [national population register, npr card, npr, resident identity]
-    keywords: [registrar general, census, npr no, resident]
+    keywords: [registrar general, census, npr  no, resident]
